@@ -41,16 +41,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="buttonClick"
                 android:text="@string/login"
                 android:textStyle="bold" />
 
             <Button
-                android:id="@+id/btnReset"
+                android:id="@+id/btnClear"
                 style="@style/Widget.AppCompat.Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/Reset"
+                android:onClick="buttonClick"
+                android:text="@string/clear"
                 android:textStyle="bold" />
         </LinearLayout>
 
@@ -64,10 +66,12 @@
             android:textStyle="bold" />
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/lock"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:srcCompat="@android:drawable/ic_lock_lock" />
+            android:layout_height="83dp"
+            android:contentDescription="@string/lock"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/lock" />
 
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

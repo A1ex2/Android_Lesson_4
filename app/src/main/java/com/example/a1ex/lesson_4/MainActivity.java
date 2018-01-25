@@ -6,33 +6,32 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.util.DuplicateFormatFlagsException;
+
 public class MainActivity extends AppCompatActivity {
+    public TextView txtLogin;
+    public TextView txtPassword;
+
+    public Button btnLogin;
+    public Button btnClear;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
-        Button btnLogin = (Button) findViewById(R.id.btnLogin);
-        Button btnReset = (Button) findViewById(R.id.btnReset);
-        final TextView txtPassword = (TextView) findViewById(R.id.txtPassword);
-        final TextView txtLogin = (TextView) findViewById(R.id.txtLogin);
-        final TextView txtResult = (TextView) findViewById(R.id.txtResult);
+        btnLogin = (Button) findViewById(R.id.btnLogin);
+        btnClear = (Button) findViewById(R.id.btnClear);
+        txtPassword = (TextView) findViewById(R.id.txtPassword);
+        txtLogin = (TextView) findViewById(R.id.txtLogin);
+    }
+    public void buttonClick(View view){
+        if (view == btnLogin){
 
-        btnLogin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                txtResult.setText("Значение пароля: " + txtPassword.getText());
-            }
-        });
-
-        btnReset.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                txtLogin.setText("");
-                txtPassword.setText("");
-                txtResult.setText("Значение пароля:");
-            }
-        });
+        }  else if (view == btnClear){
+            txtLogin.setText("");
+            txtPassword.setText("");
+            txtLogin.requestFocus();
+        }
     }
 }

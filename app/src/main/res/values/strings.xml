@@ -4,5 +4,6 @@
     <string name="password">Значение пароля</string>
     <string name="login_text">Введите логин</string>
     <string name="password_text">Введите пароль</string>
-    <string name="Reset">Очистить</string>
+    <string name="clear">Очистить</string>
+    <string name="lock">lock</string>
 </resources>
