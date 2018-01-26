@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">Lesson_4</string>
     <string name="login">Войти</string>
-    <string name="password">Значение пароля</string>
     <string name="login_text">Введите логин</string>
     <string name="password_text">Введите пароль</string>
     <string name="clear">Очистить</string>
     <string name="lock">lock</string>
+    <string name="resultText">Привет %1$s !</string>
 </resources>
