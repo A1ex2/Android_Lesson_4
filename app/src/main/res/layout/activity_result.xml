@@ -9,11 +9,13 @@
     <TextView
         android:id="@+id/txtResult"
         android:layout_width="267dp"
-        android:layout_height="141dp"
-        android:text="@string/resultText"
+        android:layout_height="46dp"
+        android:text="@string/resultTextLogin"
         android:textAlignment="center"
         android:textSize="30sp"
         android:textStyle="bold"
         tools:layout_editor_absoluteX="67dp"
-        tools:layout_editor_absoluteY="67dp" />
+        tools:layout_editor_absoluteY="67dp"
+        tools:ignore="MissingConstraints" />
+
 </android.support.constraint.ConstraintLayout>

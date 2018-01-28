@@ -5,5 +5,14 @@
     <string name="password_text">Введите пароль</string>
     <string name="clear">Очистить</string>
     <string name="lock">lock</string>
-    <string name="resultText">Привет %1$s !</string>
+    <string name="resultTextLogin">Привет %1$s !</string>
+    <string name="error">Ошибка</string>
+    <string-array name="spinDevices">
+        <item>Samsung</item>
+        <item>LG</item>
+        <item>Iphone</item>
+        <item>HTC</item>
+    </string-array>
+    <string name="login_required">Введите логин</string>
+    <string name="password_required">Введите пароль</string>
 </resources>
